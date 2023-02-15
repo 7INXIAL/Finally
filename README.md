@@ -1,1 +1,2 @@
-# 7INXI_Frame
+# OPTION
+webpack based on vue 2 version's plan
