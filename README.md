@@ -1,1 +1,2 @@
-# 7INXI_Frame
+# ANGULAR
+angular plan
