@@ -1,1 +1,2 @@
-# 7INXI_Frame
+# FUNCTION
+webpack based on react function compoents's plan
