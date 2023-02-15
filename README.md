@@ -1,2 +1,2 @@
 # FUNCTION
-webpack based on react function compoents's plan
+webpack based on react function compoent's plan
