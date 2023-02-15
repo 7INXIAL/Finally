@@ -1,0 +1,42 @@
+<!-- ngModel -->
+<!-- <input type="text" [(ngModel)]="inputValue" /> -->
+<!-- <input [ngModel]="currentItem.name" (ngModelChange)="setUppercaseName($event)" id="example-uppercase"> -->
+
+<!-- *ngIf *ngFor -->
+<h2 *ngIf="true">
+  <span *ngFor="let id of ids; let i = index">{{ i }}-{{ id }},</span>
+</h2>
+
+<!-- *ngSwitch *ngSwitchCase *ngSwitchDefault -->
+<!-- <div [ngSwitch]="currentItem.size">
+  <app-stout-item *ngSwitchCase="'small'" [item]="currentItem"></app-stout-item>
+  <app-best-item *ngSwitchCase="'big'" [item]="currentItem"></app-best-item>
+  <app-unknown-item *ngSwitchDefault [item]="currentItem"></app-unknown-item>
+</div> -->
+
+<!-- 单插槽 -->
+<ng-content></ng-content>
+
+<!-- 多插槽 -->
+<!-- <ng-content select="[question]"></ng-content> -->
+<!-- <ng-container ngProjectAs="[question]"><p>Is content projection cool?</p></ng-container> -->
+
+<!-- 使用示例 -->
+<!-- <p question>Is content projection cool?</p> -->
+
+<!-- 条件插槽 -->
+<!-- <ng-container *ngIf="condition"> … </ng-container> -->
+<!-- <ng-container *ngTemplateOutlet="tmpl; context: { $implicit: 'World' }"></ng-container> -->
+<!-- <ng-template #tmpl let-text><h1>{{ text }}</h1></ng-template> -->
+
+<!-- NgStyle -->
+<!-- <div [ngStyle]="currentStyles">
+  This div is initially italic, normal weight, and extra large (24px).
+</div> -->
+
+<!-- ngClass -->
+<!-- <div [ngClass]="isSpecial ? 'special' : ''">This div is special</div> -->
+<!-- <div [ngClass]="currentClasses">This div is initially saveable, unchanged, and special.</div>  -->
+
+<!-- ngNonBindable -->
+<!-- 禁止指令管道插值的转译 -->

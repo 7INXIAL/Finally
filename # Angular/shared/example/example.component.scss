@@ -1,0 +1,30 @@
+/*
+* @给组件定义样式
+* 使用 :host :host() 以及 :host-context()
+* 使用 component 中的 selector 定义无效
+*/
+
+// 无效
+// .app-temp1 { }
+
+// = [selector]
+:host {
+  font-style: italic;
+}
+
+// = [selector].active
+:host(.active) {
+  font-weight: bold;
+}
+
+/*
+* <[father-selector] class="active">
+*   .....
+*   <[selector] />
+*   .....
+* </[father-selector]>
+*/
+// = [father-selector].active [selector]
+// :host-context(.active) {
+//   font-style: italic;
+// }
